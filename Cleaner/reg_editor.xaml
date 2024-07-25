@@ -1,0 +1,32 @@
+﻿<Window x:Class="Cleaner.reg_editor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cleaner"
+        mc:Ignorable="d"
+        Title="Изменения в реестре" Height="300" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="181*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Отключение" HorizontalAlignment="Left" Margin="5,4,0,0" VerticalAlignment="Top"
+                BorderBrush="Black" Background="LightSlateGray" BorderThickness="2" Foreground="Blue" Grid.ColumnSpan="2"/>
+        <Label Content="Включение" HorizontalAlignment="Left" Margin="208,4,0,0" VerticalAlignment="Top"
+                BorderBrush="Black" Background="LightSlateGray" BorderThickness="2" Foreground="Blue" Grid.Column="1"/>
+        <Button x:Name="btn_offServ" Content="Ненужные сервисы" HorizontalAlignment="Left" Margin="5,40,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="btn_offServ_Click"/>
+        <Button x:Name="btn_offBack" Content="Фоновые приложения" HorizontalAlignment="Left" Margin="5,70,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="btn_offBack_Click"/>
+        <Button x:Name="btn_offPack" Content="Упаковка ядер" HorizontalAlignment="Left" Margin="5,100,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="btn_offPack_Click"/>
+        <Button x:Name="btn_offMaps" Content="Скачивать карты" HorizontalAlignment="Left" Margin="5,130,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="btn_offMaps_Click"/>
+        <Button x:Name="btn_offTrans" Content="Прозрачность" HorizontalAlignment="Left" Margin="5,160,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="btn_offTrans_Click"/>
+        <Button x:Name="btn_offWin" Content="Принуждение win32" HorizontalAlignment="Left" Margin="5,190,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Click="btn_offWin_Click"/>
+        <Button x:Name="btn_onMaps" Content="Скачивать карты" HorizontalAlignment="Left" Margin="208,40,0,0" VerticalAlignment="Top" Grid.Column="1" Click="btn_onMaps_Click"/>
+        <Button x:Name="btn_onServ" Content="Сервисы" HorizontalAlignment="Left" Margin="208,70,0,0" VerticalAlignment="Top" Grid.Column="1" Click="btn_onServ_Click"/>
+        <Button x:Name="btn_onTrans" Content="Прозрачность" HorizontalAlignment="Left" Margin="208,100,0,0" VerticalAlignment="Top" Grid.Column="1" Click="btn_onTrans_Click"/>
+        <Button Content="Принуждение win32" HorizontalAlignment="Left" Margin="208,130,0,0" VerticalAlignment="Top" Grid.Column="1" Click="btn_offWin_Click"/>
+
+
+
+    </Grid>
+</Window>
